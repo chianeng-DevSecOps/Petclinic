@@ -25,7 +25,7 @@ pipeline {
                sh "mvn test"
             }
         }
-        stage('Build-Artifact') {
+        stage('mvn package') {
             steps {
                sh "mvn clean package"
             }
