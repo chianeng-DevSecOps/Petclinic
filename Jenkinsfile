@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Git-Checkout') {
             steps {
-               git branch: 'main', url: 'https://github.com/chianeng-DevSecOps/Petclinic.git'
+               git branch: 'develop', url: 'https://github.com/chianeng-DevSecOps/Petclinic.git'
             }
         }
         stage('Code-Compile') {
