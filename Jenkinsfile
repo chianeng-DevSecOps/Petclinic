@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Sonar Analysis') {
             steps {
-                withSonarQubeEnv('sonar') {
+                withSonarQubeEnv('sonar-server') {
                     sh ''' 
                     $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=petclinic \
                     -Dsonar.java.binaries=. \
